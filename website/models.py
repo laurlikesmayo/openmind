@@ -12,7 +12,7 @@ class Users(db.Model, UserMixin):
     email = db.Column(db.String(50), unique=True, nullable = False)
     password = db.Column(db.String(50), nullable = False)
     posts = db.relationship('Posts', backref='poster')
-    replier = db.relationship("Replies", backref='replier')
+    replyto = db.relationship("Replies", backref='repliers')
 
 class Posts(db.Model):
     id = db.Column("id", db.Integer, primary_key = True)
@@ -25,6 +25,6 @@ class Posts(db.Model):
 
 class Replies(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
-    replyto = db.Column(db.Integer, db.ForeignKey("posts.id"))
+    replyposts = db.Column(db.Integer, db.ForeignKey("posts.id"))
     text = db.Column(db.Text(1000))
     replier=db.Column(db.Integer, db.ForeignKey("users.id"))

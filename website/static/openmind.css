@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffefdb;
+}
+
+text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+}
+
+#about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#confess {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#analyse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#help {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#searchbar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+} 
+
+#searchbtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.container1 {
+    background-color: #698b69;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    box-shadow: #2f4f4f 7px 7px 7px;
+}
+
+.container2 {
+    background-color: #698b69;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    box-shadow: #2f4f4f 7px 7px 7px;
+    align-content: center;
+    margin-top: 250px;
+}
+
+h1 {
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-top: 80px;
+    
+}
+h2 {
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-top: 80px;
+    
+}
+
+#navbar {
+    background-color: #698b69;
+    
+}
+
+#section1 {
+    height: 800px;
+    background:#ffefdb ;
+    display: inline-block;
+    width: 100%;
+}
+
+
+#section2 {
+    height: 800px;
+    background: #cdb38b;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+.btn1 {
+    width: 200px;
+    height: 70px;
+    border: none;
+    color: grey;
+    background-color: #ffefdb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0  #2f4f4f;
+    transition: ease-out 0.4s;
+    outline: none;
+    font-size: 10px;
+    align-self: center;
+    vertical-align: center;
+    margin: auto;
+    position: absolute;
+    left: 900px;
+    top: 1400px;
+}
+.btn1:hover {
+    box-shadow: inset 200px 0 0 0  #2f4f4f;
+    cursor: pointer;
+    color:  #dbbb9b;
+    }
+
