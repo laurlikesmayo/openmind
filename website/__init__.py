@@ -17,7 +17,7 @@ metadata= MetaData(naming_convention=convention)
 app = Flask(__name__)
 db = SQLAlchemy(app, metadata=metadata)
 migrate = Migrate(app, db, render_as_batch=True)
-
+db.init_app(app)
 
 def createapp():
     app.secret_key = 'hello'

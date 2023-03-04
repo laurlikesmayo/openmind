@@ -10,7 +10,7 @@ views = Blueprint("views",  __name__)
 
 @views.route('/')
 def home():
-    return "hi"
+    return render_template("openmind.html")
 
 
 @views.route('/register',  methods=['GET', 'POST'] )
