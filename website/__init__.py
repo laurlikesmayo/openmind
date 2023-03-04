@@ -15,7 +15,7 @@ convention={
 }
 metadata= MetaData(naming_convention=convention)
 app = Flask(__name__)
-db = SQLAlchemy(app, metadata=metadata)
+db = SQLAlchemy(app)
 migrate = Migrate(app, db, render_as_batch=True)
 db.init_app(app)
 
