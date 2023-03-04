@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename = 'posts.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'post.css')}}">
 
 
 <h1> Hello </h1>
@@ -13,13 +13,17 @@
     <p>{{ post.date_posted }}</p><br/>
     <p>{{ post.content }}</p><br/>
     
-    <a href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
+    <a c lass = "btn-secondary"href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
+    <br>
+    {% for reply in replies %}
     <br>
     <div class="post">
-    {% for reply in replies %}
-    {{reply.text}} By:  {{reply.repliers.name}}<br>
-    {% endfor %}
+    
+    <p style="font-size: 15px; margin-left: 20px; margin-top: 30px;">{{reply.repliers.name}} says:</p>
+    <p style="margin-left: 20px;">{{reply.text}}</p>
+    
     </div>
+    {% endfor %}
 </div>
     
 
