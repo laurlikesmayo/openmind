@@ -1,8 +1,8 @@
+from . import db
 from flask import Flask, Blueprint, render_template, request, url_for, redirect, session, flash
-from .models import Users, Posts, SignUps
+from .models import Users, Posts
 from datetime import timedelta, datetime
 from flask_login import login_user, logout_user, login_required, UserMixin, current_user
-from . import db
 from werkzeug.security import generate_password_hash, check_password_hash 
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, BooleanField, ValidationError, TextAreaField
@@ -10,13 +10,11 @@ from wtforms.validators import DataRequired, EqualTo, Length
 from wtforms.widgets import TextArea
 from flask_ckeditor import CKEditorField
 from flask_wtf.file import FileField
-import smtplib, ssl
-from email.message import EmailMessage
 
 
 views = Blueprint("views",  __name__)
 
-@views.home('/')
+@views.route('/')
 def home():
     return "hi"
 
@@ -75,3 +73,5 @@ def login():
                 print('Wrong Password')
         else:
             print('Username does not exist')
+
+    return render_template("login.html")

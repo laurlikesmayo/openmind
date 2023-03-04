@@ -13,7 +13,8 @@ class Users(db.Model, UserMixin):
     password = db.Column(db.String(50), nullable = False)
     posts = db.relationship('Posts', backref='poster')
 
-class Posts(db.Model, UserMixin):
+class Posts(db.Model):
+    id = id = db.Column("id", db.Integer, primary_key = True)
     poster_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     title = db.Column(db.String(255))
     content = db.Column(db.Text(1000))#not a string but text cuz it a lot bigger
