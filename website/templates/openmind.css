@@ -54,7 +54,7 @@ text {
 }
 
 .container1 {
-    background-color: #698b69;
+    background-color: #cdb38b;
     width: 600px;
     height: 300px;
     border-radius: 10px;
@@ -82,11 +82,9 @@ text {
 }
 
 h1 {
-    padding-top: 50px;
+    padding-top: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding-left: 70px;
-    padding-top: 80px;
+    font-size: 90px;
     
 }
 h2 {
