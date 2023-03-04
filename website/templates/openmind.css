@@ -122,8 +122,8 @@ h2 {
 
 
 .btn1 {
-    width: 320px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     border: none;
     color: grey;
     background-color: #ffefdb;
@@ -136,8 +136,8 @@ h2 {
     vertical-align: center;
     margin: auto;
     position: absolute;
-    left: 780px;
-    top: 1360px;
+    left: 800px;
+    top: 1400px;
 }
 .btn1:hover {
     box-shadow: inset 200px 0 0 0  #2f4f4f;
