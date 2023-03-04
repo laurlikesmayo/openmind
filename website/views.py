@@ -4,12 +4,6 @@ from .models import Users, Posts
 from datetime import timedelta, datetime
 from flask_login import login_user, logout_user, login_required, UserMixin, current_user
 from werkzeug.security import generate_password_hash, check_password_hash 
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, PasswordField, BooleanField, ValidationError, TextAreaField
-from wtforms.validators import DataRequired, EqualTo, Length
-from wtforms.widgets import TextArea
-from flask_ckeditor import CKEditorField
-from flask_wtf.file import FileField
 
 
 views = Blueprint("views",  __name__)
