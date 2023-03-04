@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'posts.css')}}">
+
+
+<h1> blog posts...</h1>
+
+
+
+<div class="shadow p-3 mb-5 bg-body rounded">
+    By: {{ post.poster.name }}<br/>
+    {{ post.date_posted }}<br/>
+    {{ post.content }}<br/>
+    
+    <a href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
+    {% for reply in replies %}
+    {{reply.text}}
+    {% endfor %}
+</div>
+    
+
+
+
+
+
+{% endblock %}
+
+

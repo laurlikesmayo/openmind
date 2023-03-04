@@ -1,6 +1,6 @@
 from . import db
 from flask import Flask, Blueprint, render_template, request, url_for, redirect, session, flash
-from .models import Users, Posts
+from .models import Users, Posts, Replies
 from datetime import timedelta, datetime
 from flask_login import login_user, logout_user, login_required, UserMixin, current_user
 from werkzeug.security import generate_password_hash, check_password_hash 
@@ -79,7 +79,7 @@ def create():
         post = Posts(title=title, content=content, poster_id=poster)
 
         db.session.add(post)
-        db.session.commit( )
+        db.session.commit()
 
         flash('Event created sucessfully')
         print('post sucessful')
@@ -92,5 +92,27 @@ def create():
 def posts():
     posts = Posts.query.order_by(Posts.date_added)
     return render_template("posts.html", posts=posts)
+
+
+@views.route('/post/<int:id>')
+def post(id):
+    post = Posts.query.get_or_404(id)
+    replies = Replies.query.filter_by(replyposts=id).all()
+    
+    
+    return render_template('post.html', post=post, replies=replies)
+    
+
+@views.route("/post/<int:id>/reply", methods=["GET", "POST"])
+def reply(id):
+    if request.method == "POST":
+        content = request.form.get("content")
+        post=Posts.query.filter_by(id=id).first()
+        reply = Replies(text=content, replier=current_user.id, replyposts=post.id)
+        db.session.add(reply)
+        db.session.commit()
+        return redirect(url_for('views.post', id=id))
+
+    return render_template("reply.html")
 
 
