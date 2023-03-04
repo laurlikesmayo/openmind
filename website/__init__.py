@@ -26,7 +26,7 @@ def createapp():
     app.config['SECRET_KEY']='hello'
     app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False
-    db.init_app(app)
+    
     loginmanager = LoginManager(app)
     loginmanager.login_view = '/'
 
