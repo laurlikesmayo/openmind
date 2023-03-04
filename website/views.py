@@ -10,7 +10,7 @@ views = Blueprint("views",  __name__)
 
 @views.route('/')
 def home():
-    return "hi"
+    return render_template("openmind.html")
 
 
 @views.route('/register',  methods=['GET', 'POST'] )
@@ -42,7 +42,7 @@ def register():
 
     return render_template("register.html")
 
-@views.route('/login',  methods=['GET', 'POST'] )
+@views.route('/login',  methods=["GET", "POST"] )
 def login():
     if request.method == "POST":
         username = request.form.get('username')
@@ -69,3 +69,28 @@ def login():
             print('Username does not exist')
 
     return render_template("login.html")
+
+@views.route("/create", methods = ["GET", "POST"])
+def create():
+    if request.method == 'POST':
+        title = request.form.get("title")
+        content = request.form.get('content')
+        poster = current_user.id
+        post = Posts(title=title, content=content, poster_id=poster)
+
+        db.session.add(post)
+        db.session.commit( )
+
+        flash('Event created sucessfully')
+        print('post sucessful')
+
+        return redirect(url_for('views.posts'))
+
+    return render_template("create.html")
+
+@views.route('/posts')
+def posts():
+    posts = Posts.query.order_by(Posts.date_added)
+    return render_template("posts.html", posts=posts)
+
+
