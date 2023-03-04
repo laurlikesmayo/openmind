@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffefdb;
+}
+
+#home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    background-color: #b4eeb4;
+}
+
+#about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#confess {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#analyse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#help {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#searchbar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+} 
+
+#searchbtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.container1 {
+    background-color: #698b69;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    box-shadow: #2f4f4f 7px 7px 7px;
+}
+
+h1 {
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-top: 80px;
+    
+}
+
+#navbar {
+    background-color: #698b69;
+    
+}
+
