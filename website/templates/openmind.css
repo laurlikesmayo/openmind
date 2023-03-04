@@ -71,7 +71,7 @@ text {
     width: 800px;
     height: 500px;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 400px;
     justify-content: space-around;
     flex-direction: row;
@@ -164,4 +164,17 @@ h2 {
     left: 160px;
     top: 920px;
     width: 800px;
+}
+
+#searchbtn {
+    border-color: #2f4f4f;
+}
+
+#searchbtn:hover {
+    background-color: #2f4f4f;
+    border-color: #2f4f4f;
+}
+
+p {
+    color: black;
 }
