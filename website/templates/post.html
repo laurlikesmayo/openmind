@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename = 'posts.css')}}">
 
 
-<h1> blog posts...</h1>
+<h1> Hello </h1>
 
 
 
@@ -14,8 +14,9 @@
     {{ post.content }}<br/>
     
     <a href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
+    <br>
     {% for reply in replies %}
-    {{reply.text}}
+    {{reply.text}} By:  {{reply.repliers.name}}<br>
     {% endfor %}
 </div>
     
