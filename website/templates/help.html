@@ -33,14 +33,21 @@
             <input id="password1bar" name="password1" id="passoword1bar" type="password" placeholder="Enter your password">
         </div> 
 
-       
+        <div>
+            <label for="password2" id="password2">Reenter your password</label>
+            <input id="password2bar" name="password2" id="password2bar" type="password" placeholder="Reenter your password">
+        </div>
 
         <div>
-            <label for="password2" id="password2">Reenter your password2</label>
-            <input id="password2bar" name="password2" id="password2bar" type="password" placeholder="Enter your password2">
+            
+            <form action="/action_page.php">
+                <label for="fileupload" id="fileuploadlabel">Please upload your Doctorate Qualification PDF below: </label>
+                <input type="file" id="fileupload" name="filename">
+              </form>
         </div>
         <button type = "submit" id="submitbtn">Submit</button>
-        
+    </div>
     </form>
+
 </body>
 </html>
