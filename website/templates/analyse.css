@@ -1,0 +1,18 @@
+h1{
+    align-self: center;
+    padding-top: 100px;
+    padding-left: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #2f4f4f;
+}
+
+body{
+    background-color: #ffefdb;
+}
+
+#form-img{
+    width: 520px;
+    position: absolute;
+    left: 450px;
+}
