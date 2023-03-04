@@ -1,0 +1,195 @@
+#navbar {
+    background-color: #698b69;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffefdb;
+}
+
+text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+}
+
+#about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#confess {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#analyse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#help {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#searchbar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+} 
+
+#searchbtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 50px;
+    font-size: 20px;
+    padding-left: 80px;
+    
+}
+
+#container1 {
+    background-color: #698b69;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+#name {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#namebar {
+    margin-left: 20px;
+    border-color: #2f4f4f;
+    border-radius: 5px;
+    transition: ease-out 0.2s;
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#namebar:hover {
+    box-shadow: inset 190px 0 0 0 #2f4f4f;
+    cursor: pointer;
+    
+}
+
+#username {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#username-bar {
+    margin-left: 20px;
+    border-color: #2f4f4f;
+    border-radius: 5px;
+    transition: ease-out 0.2s;
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#username-bar:hover {
+    box-shadow: inset 190px 0 0 0 #2f4f4f;
+    cursor: pointer;
+    
+}
+#email {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#emailbar {
+    margin-left: 20px;
+    border-color: #2f4f4f;
+    border-radius: 5px;
+    transition: ease-out 0.2s;
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#emailbar:hover {
+    box-shadow: inset 190px 0 0 0 #2f4f4f;
+    cursor: pointer;
+    
+}
+
+#password1 {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#password1bar {
+    margin-left: 20px;
+    border-color: #2f4f4f;
+    border-radius: 5px;
+    transition: ease-out 0.2s;
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#password1bar:hover {
+    box-shadow: inset 190px 0 0 0 #2f4f4f;
+    cursor: pointer;
+    
+}
+
+#password2 {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#password2bar {
+    margin-left: 20px;
+    border-color: #2f4f4f;
+    border-radius: 5px;
+    transition: ease-out 0.2s;
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#password2bar:hover {
+    box-shadow: inset 190px 0 0 0 #2f4f4f;
+    cursor: pointer;
+    
+}
+
+#submitbtn {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: black;
+    border-radius: 10px;
+    transition: ease-out 0.2s;
+    
+}
+
+#submitbtn:hover {
+    box-shadow: inset 75px 0 0 0 #2f4f4f;
+    cursor: pointer;
+}
