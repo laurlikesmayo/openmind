@@ -77,8 +77,8 @@ text {
     flex-direction: row;
     display: flex;
     box-shadow: #2f4f4f 7px 7px 7px;
-    position: absolute;
-    
+    align-content: center;
+    margin-top: 250px;
 }
 
 h1 {
