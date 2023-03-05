@@ -13,7 +13,7 @@
     <p>{{ post.date_posted }}</p><br/>
     <p>{{ post.content }}</p><br/>
     
-    <a c lass = "btn-secondary"href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
+    <a class = "btn btn-secondary"href = "{{ url_for('views.reply', id=post.id)}}">Reply to this post</a>
     <br>
     {% for reply in replies %}
     <br>
