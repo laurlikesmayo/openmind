@@ -20,7 +20,7 @@ h1 {
     margin-left: 400px;
     justify-content: space-around;
     flex-direction: row;
-    display: flex;
+    display: flex; 
     box-shadow: #2f4f4f 7px 7px 7px;
 }
 
@@ -50,4 +50,102 @@ h1 {
 
 .form-control{
     background-color: #ffefdb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffefdb;
+}
+
+text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+}
+
+#about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#confess {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+#analyse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#help {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#searchbar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+} 
+
+#searchbtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.container1 {
+    background-color: #cdb38b;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    box-shadow: #2f4f4f 7px 7px 7px;
+}
+
+.container2 {
+    background-color: #698b69;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 400px;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    box-shadow: #2f4f4f 7px 7px 7px;
+    align-content: center;
+    margin-top: 250px;
+}
+
+
+h2 {
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-top: 80px;
+    
+}
+
+#navbar {
+    background-color: #698b69;
+    
 }
